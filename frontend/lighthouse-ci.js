@@ -167,7 +167,9 @@ class LighthouseCI {
     });
 
     const body = `
-Updated [Lighthouse](https://developers.google.com/web/tools/lighthouse/) report for the changes in this PR:
+URL: [${lhr.requestedUrl}](${lhr.requestedUrl})
+
+Calculated [Lighthouse](https://developers.google.com/web/tools/lighthouse/) report for the changes in this PR:
 
 | Category | New score | Required threshold |
 | ------------- | ------------- | ------------- |
