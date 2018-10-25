@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "serve": "OAUTH_TOKEN=`cat .oauth_token` PORT=8081 node server.js",
-    "start": "OAUTH_TOKEN=`cat .oauth_token` node server.js",
+    "start": "node server.js",
     "lint": "npx eslint ."
   },
   "engines": {

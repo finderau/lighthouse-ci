@@ -11,4 +11,4 @@ docker build --no-cache \
   -t "${BRANCH_COMMIT_TAG}" \
   -t "${BRANCH_TAG_USWEST1}" \
   -t "${BRANCH_COMMIT_TAG_USWEST1}" \
-  "${DIR}/../builder"
+  "${DIR}/../frontend"

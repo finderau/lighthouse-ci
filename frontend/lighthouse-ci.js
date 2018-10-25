@@ -19,6 +19,7 @@ const fetch = require('node-fetch'); // polyfill
 const Github = require('@octokit/rest');
 const URL = require('url').URL;
 const URLSearchParams = require('url').URLSearchParams;
+const CI_SERVER = process.env.CI_SERVER;
 
 class LighthouseCI {
   /**
@@ -44,7 +45,7 @@ class LighthouseCI {
 
     // POST https://builder-dot-lighthouse-ci.appspot.com/ci
     // '{"output": "json", "url": <testUrl>}"'
-    return fetch('https://builder-dot-lighthouse-ci.appspot.com/ci', {
+    return fetch(`${CI_SERVER}/ci`, {
       method: 'POST',
       body: JSON.stringify(body),
       headers
